@@ -1,0 +1,282 @@
+/*
+ Theme Name:   GeneratePress Child
+ Theme URI:    https://generatepress.com
+ Description:  Default GeneratePress child theme
+ Author:       Tom Usborne
+ Author URI:   https://tomusborne.com
+ Template:     generatepress
+ Version:      0.1
+*/
+
+/* CENTER HEADER */
+:root {
+	--lemon-font: 'Lemon Milk', 'serif';
+	--carena-font: 'Carena', 'serif';
+	--champ-font: 'Champagne & Limousines', 'serif';
+	--yellow: #F4E179;
+	--orange: #FF734D;
+	--purple: #331548;
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: 'Carena';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/07/Carena-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-Regular.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-RegularItalic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: normal;
+  font-weight: 300;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-Light.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: italic;
+  font-weight: 300;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-LightItalic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-Medium.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: italic;
+  font-weight: 500;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-MediumItalic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-Bold.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Lemon Milk';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/wp-content/uploads/2024/07/LEMONMILK-BoldItalic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Champagne & Limousines';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/12/champagne-limousines.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Champagne & Limousines';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/12/champagne-limousines-italic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Champagne & Limousines';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/wp-content/uploads/2024/12/champagne-limousines-italic.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Champagne & Limousines';
+  font-style: normal;
+  font-weight: 600;
+  src: url('/wp-content/uploads/2024/12/champagne-limousines-bold.otf') format('otf');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Champagne & Limousines';
+  font-style: italic;
+  font-weight: 600;
+  src: url('/wp-content/uploads/2024/12/champagne-limousines-bolditalic.otf') format('otf');
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.text-lemon {
+	font-family: var(--lemon-font);
+}
+
+.text-carena {
+	font-family: var(--carena-font);
+}
+
+.text-champ {
+	font-family: var(--champ-font);
+}
+
+.padding-block-minimal {
+    padding-block: 0.5rem;
+}
+
+.custom-home-slider .slick-slide {
+    transform: scale(0.75) translateX(30%);
+}
+
+.custom-home-slider .slick-slide figure {
+    position: relative;
+}
+
+.custom-home-slider .slick-slide figure::before {
+    content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #2C0F54AA;
+}
+
+
+.custom-home-slider .slick-current {
+    transform: scale(1) translateX(20%);
+}
+
+.custom-home-slider .slick-current figure {
+    border: 35px solid var(--yellow);
+}
+
+.custom-home-slider .slick-current figure::before {
+    display: none;
+}
+
+.menu-space .wp-block-navigation__container {
+    gap: 40px;
+}
+
+
+@media (min-width: 769px) {
+	#site-navigation .navigation-branding .site-logo,
+	#sticky-navigation .navigation-branding,
+	.inside-header > .navigation-branding,
+	.inside-header > .site-branding,
+	.inside-header > .site-logo,
+	.site-branding-container {
+		position: absolute;
+		left: 48.5%;
+		transform: translateX(-50%);
+		z-index: 1000;
+	}
+
+	#site-navigation {
+		margin-left: unset !important;
+		display: flex;
+	}
+
+	.site-header .main-navigation:not(#sticky-navigation) .inside-navigation {
+		margin: unset;
+	}
+
+	#primary-menu,
+	#site-navigation,
+	.main-navigation .inside-navigation {
+		flex: 1;
+	}
+
+	.main-navigation .main-nav > ul {
+		max-width: 60vw;
+		margin: 0 auto;
+	}
+
+	.main-navigation ul li:nth-child(4) {
+		margin-left: auto;
+	}
+}
+
+.main-navigation,
+.main-navigation ul ul {
+	background-color: transparent !important;
+}
+
+.main-navigation .main-nav ul li a {
+	font-family: var(--lemon-font);
+}
+
+.site-header {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background-color: transparent !important;
+	padding: 1rem;
+	transition: all 0.3s ease-in-out;
+	z-index: 99;
+}
+
+.header-scroll {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+body.header-light .main-navigation .main-nav ul li a,
+.main-navigation .menu-toggle,
+.main-navigation .menu-bar-items {
+	color: var(--yellow);
+	font-size: 1.2rem;
+}
+
+/* DARK MODE */
+body.header-dark .site-header .header-image {
+    width: 320px;
+    filter: hue-rotate(265deg) brightness(0.3);
+}
+
+body.header-dark .main-navigation .main-nav ul li a,
+.main-navigation .menu-toggle,
+.main-navigation .menu-bar-items {
+	color: var(--purple);
+	font-size: 1.2rem;
+}
+
+
+.site-footer .site-info {
+    background-color: #f4efd9 !important;
+    font-size: 1.5rem;
+    font-family: var(--lemon-font);
+}
+
+
+.custom-separator {
+    border-top: 15px solid;
+}

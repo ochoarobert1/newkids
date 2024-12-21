@@ -1,0 +1,45 @@
+{
+  "name": "ochoarobert1/newkids",
+  "description": "WordPress local development environment for New Kids on the Docks",
+  "authors": [
+    {
+      "name": "Robert Ochoa",
+      "email": "ochoa.robert1@gmail.com"
+    }
+  ],
+  "license": "GPL",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      ".source/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      ".source/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    }
+  },
+  "require": {
+    "wpackagist-theme/generatepress": "3.5.1",
+    "wpackagist-plugin/advanced-custom-fields": "6.3.11",
+    "wpackagist-plugin/carousel-block": "1.0.16",
+    "wpackagist-plugin/codepress-admin-columns": "4.7.7",
+    "wpackagist-plugin/custom-fonts": "2.1.8",
+    "wpackagist-plugin/generateblocks": "1.9.1",
+    "wpackagist-plugin/svg-support": "2.5.8"
+  },
+  "config": {
+    "allow-plugins": {
+      "composer/installers": true
+    }
+  }
+}

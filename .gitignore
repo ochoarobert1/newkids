@@ -1,0 +1,12 @@
+.env
+.docker/mysql/*
+.source/uploads/*
+.source/themes/twentytwentyone
+.source/themes/twentytwentytwo
+.source/themes/twentytwentythree
+.source/themes/twentytwentyfour
+.source/themes/twentytwentyfive
+.source/themes/generatepress
+.source/plugins/*
+/vendor/
+node_modules

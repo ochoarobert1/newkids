@@ -1,0 +1,14 @@
+{
+  "name": "ochoarobert1-newkids",
+  "version": "1.0.0",
+  "author": "Robert Ochoa",
+  "license": "ISC",
+  "description": "WordPress Local Development Environment for New Kids on the Docks",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^30.7.0"
+  }
+}
